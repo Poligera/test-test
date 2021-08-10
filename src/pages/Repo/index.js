@@ -14,8 +14,13 @@ const Repo = () => {
 
     const fetchRepos = async () => {
         try {
-            let data = await axios.get(`https://api.github.com/users/${username}/repos`);
-            const array = data.data.reverse().map(repo => {
+            let { data } = await axios.get(`https://api.github.com/users/${username}/repos`);
+            console.log(data);
+            if (!data.length ) {
+                setError("Sorry, wrong username")
+            } else { 
+                
+                const array = data.reverse().map(repo => {
                 let repoName = repo.name;
                 let url = repo.html_url;
                 let forks = repo.forks;
@@ -23,12 +28,11 @@ const Repo = () => {
                 let watchers = repo.watchers;
                 let language = repo.language;
                 return {repoName, url, forks, openIssues, watchers, language};
-                }
-            );
-            setRepos(array);
+                });
+                setRepos(array)
+            }
         } catch (err) {
             console.warn(err);
-            setError("Sorry, wrong username");
         }
     }
 
@@ -41,7 +45,7 @@ const Repo = () => {
     return (
         <>
         <Form updateUsername={updateUsername}/>
-        {repos? renderCards(repos): <p id="error-msg">{error}</p> }
+        {error? <p id="error-msg">{error}</p>: renderCards(repos)}
         </>
     )
 }

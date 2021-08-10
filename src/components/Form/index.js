@@ -4,12 +4,14 @@ import './style.css';
 const Form = ({updateUsername}) => {
     const [ input, setInput ] = useState("");
 
-    const handleInput = e => setInput(e.target.value);
+    const handleInput = e => {
+        setInput(e.target.value);
+    }
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
         updateUsername(input); // A function coming from props (Repo is parent)
-        handleInput("");
+        setInput(""); // Clear input field
     }
 
     return (
