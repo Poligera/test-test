@@ -1,7 +1,8 @@
 import React from 'react';
+import './style.css';
 
 const Header = () => {
-    return <p></p>
+    return <h1>Welcome to your Repositories</h1>
 }
 
 export default Header;

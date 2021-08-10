@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Repo } from './pages';
+import { Repo } from './pages';
 import { Header } from './layout';
 
 import './App.css';

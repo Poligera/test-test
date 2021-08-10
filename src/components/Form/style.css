@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+form {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+input[type=submit] {
+    height: 1.7rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(129, 129, 126);
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    height: 1.2rem;
+    text-align: center;
+}
+
+input[type=text]:active {
+    background-color: beige;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+input[type=submit]:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    font-size: larger;
+}

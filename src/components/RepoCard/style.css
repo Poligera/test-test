@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 #card {
     border:solid rgb(226, 226, 226);
     border-radius: 20px 20px;
@@ -12,16 +14,19 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-
-
 h1 {
 font-family: 'Raleway', sans-serif;
 }
 
+
+
 h1 a {
     text-decoration: none;
-text-color: black; 
+    color: black; 
+}
+
+h1 a:active {
+    color: brown
 }
 
 #details {
