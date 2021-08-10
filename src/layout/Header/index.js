@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => {
-    return <p>GitHub Repo Tracker</p>
+    return <p></p>
 }
 
 export default Header;
