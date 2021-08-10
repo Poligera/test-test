@@ -10,9 +10,7 @@ function App(){
   return(
     <>
       <Header />
-        <Form/>
         <Repo/>
-      <Footer />
     </>
   );
 
