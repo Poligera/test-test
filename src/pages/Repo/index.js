@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from '../../components'
+import {RepoCard} from '../../components';
+import './style.css';
 
 const Repo = () => {
     const [username, setUsername] = useState("Poligera");
@@ -29,7 +30,7 @@ const Repo = () => {
 
 
 
-    // const renderCards = data => data.map((repoEntry) => <Card repoName={repoEntry.repoName}/>)
+    const renderCards = data => data.map((repoEntry, i) => <RepoCard repoName={repoEntry.repoName} key={i} link={repoEntry.url} forks={repoEntry.forks} openIssues={repoEntry.openIssues} watchers={repoEntry.watchers}/>)
 
 
 
@@ -37,10 +38,11 @@ const Repo = () => {
 
     return (
         <>
-            <p> {JSON.stringify(repos)} </p>
-        {/* {renderCards(repos)}; */}
+<h1 className="title"> Welcome to your Repositories</h1>
+            {/* <p> {JSON.stringify(repos)} </p> */}
+            {renderCards(repos)};
+            {/* <RepoCard /> */}
 
-        {/* <Card/> */}
         </>
     )
 }
