@@ -3,14 +3,14 @@
 #### A simple GitHub Repo Tracker written with HTML/CSS/JS/React that makes use of  [GitHub API](https://developer.github.com/v3/repos/#list-repositories-for-a-user) (does not reuire authentication).
 
 ### Deployment:
-
+https://github-repo-tracker.netlify.app/
 
 
 ### Functionality:
 
 - Repo tracker displays input for users to give their GitHub username
 - After submitting their username, GitHub API retrieves that user's list of repos
-- When selecting a repo, a User is shown some data about that repo eg. issue count, stargazers, forks etc.
+- When selecting a repo, a User is shown some data about that repo eg. main language, stargazers, forks etc.
 
 
 ### Installation & Usage
