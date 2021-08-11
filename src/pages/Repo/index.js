@@ -6,7 +6,7 @@ import './style.css'
 const Repo = () => {
     const [repos, setRepos] = useState([]);
     const [username, setUsername] = useState("");
-    const [ error, setError ] = useState("");
+    const [ error, setError ] = useState(null);
 
     const updateUsername = (value) => {
         setUsername(value);
@@ -14,6 +14,7 @@ const Repo = () => {
 
     const fetchRepos = async () => {
         try {
+            setError(null);
             let { data } = await axios.get(`https://api.github.com/users/${username}/repos`);
             if (!data.length ) {
                 setError("Sorry, this user has no public repos");
