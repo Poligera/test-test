@@ -15,9 +15,8 @@ const Repo = () => {
     const fetchRepos = async () => {
         try {
             let { data } = await axios.get(`https://api.github.com/users/${username}/repos`);
-            console.log(data);
             if (!data.length ) {
-                setError("Sorry, wrong username")
+                setError("Sorry, this user has no public repos")
             } else { 
                 
                 const array = data.reverse().map(repo => {
@@ -39,8 +38,7 @@ const Repo = () => {
     useEffect(() => fetchRepos(), [username])
 
 
-    const renderCards = data => data.map((repoEntry, i) => <RepoCard repoName={repoEntry.repoName} key={i} link={repoEntry.url} language={repoEntry.language} forks={repoEntry.forks} openIssues={repoEntry.openIssues} watchers={repoEntry.watchers}/>)
-
+    const renderCards = data => data.map((repoEntry, i) => <RepoCard repoName={repoEntry.repoName} key={i} link={repoEntry.url} language={repoEntry.language} forks={repoEntry.forks} openIssues={repoEntry.openIssues} watchers={repoEntry.watchers}/>);
 
     return (
         <>

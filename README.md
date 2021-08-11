@@ -20,3 +20,10 @@ https://github-repo-tracker.netlify.app/
 - Run **npm install** to get Node Modules, wait for them to be installed.
 - Run **npm run dev** to start the app in the browser
 - Upon getting "webpack 5.35.0 compiled successfully" in the terminal, you will see a browser page open at http://localhost:8080/
+
+
+### Future improvements
+
+- Make the first fetch request dependant on form submission
+- Add more logic to filter out wrong username vs GH users with no public repositories
+- Add media queries
