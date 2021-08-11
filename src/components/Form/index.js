@@ -18,7 +18,7 @@ const Form = ({updateUsername}) => {
         <>
             <form role="form" onSubmit={handleFormSubmit}>
                 <label htmlFor="username">GitHub username: </label>
-                <input type="text" id="username" name="username" placeholder="username" onMouseOver={e => e.target.placeholder=''} onMouseOut={e => e.target.placeholder="username"} value={input} onChange={e => handleInput(e)}/>
+                <input type="text" id="username" name="username" placeholder="username" onMouseOver={e => e.target.placeholder=''} onMouseOut={e => e.target.placeholder="username"} value={input} onChange={handleInput}/>
                 <input type="submit" value="SUBMIT"/>
             </form>
         </>

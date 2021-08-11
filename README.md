@@ -22,8 +22,11 @@ https://github-repo-tracker.netlify.app/
 - Upon getting "webpack 5.35.0 compiled successfully" in the terminal, you will see a browser page open at http://localhost:8080/
 
 
+### Known bugs
+
+- At the moment we cannot fetch a valid user after an invalid user, unless the browser is refreshed (logical error somewhere)
+
 ### Future improvements
 
-- Make the first fetch request dependant on form submission
-- Add more logic to filter out wrong username vs GH users with no public repositories
+- Add more logic to filter out a wrong username vs GH users with no public repositories
 - Add media queries
