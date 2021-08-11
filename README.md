@@ -19,7 +19,7 @@ https://github-repo-tracker.netlify.app/
 ### Installation & Usage
 
 - Clone or download the repo.
-- Open terminal and cd into the folder named `GitHub-Repo-Tracker`.
+- Open terminal and cd into  `GitHub-Repo-Tracker` folder.
 - Run **npm install** to get Node Modules, wait for them to be installed.
 - Run **npm run dev** to start the app in the browser
 - Upon getting "webpack 5.35.0 compiled successfully" in the terminal, you will see a browser page open at http://localhost:8080/
