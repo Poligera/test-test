@@ -1,8 +1,8 @@
 # GitHub-Repo-Tracker
 
-Created by [Polina Moore](https://github.com/Poligera) and [Shav Vimalendiran](https://github.com/Shavvimal).
-
 #### A simple GitHub Repo Tracker written with HTML/CSS/JS/React that makes use of  [GitHub API](https://developer.github.com/v3/repos/#list-repositories-for-a-user) (does not require authentication).
+
+Created by [Polina Moore](https://github.com/Poligera) and [Shav Vimalendiran](https://github.com/Shavvimal).
 
 
 ### Deployment:
