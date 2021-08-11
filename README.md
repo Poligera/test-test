@@ -1,6 +1,6 @@
 # GitHub-Repo-Tracker
 
-#### A simple GitHub Repo Tracker written with HTML/CSS/JS/React that makes use of  [GitHub API](https://developer.github.com/v3/repos/#list-repositories-for-a-user) (does not reuire authentication).
+#### A simple GitHub Repo Tracker written with HTML/CSS/JS/React that makes use of  [GitHub API](https://developer.github.com/v3/repos/#list-repositories-for-a-user) (does not require authentication).
 
 ### Deployment:
 https://github-repo-tracker.netlify.app/
