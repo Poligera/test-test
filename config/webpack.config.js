@@ -40,10 +40,17 @@ const config = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
-      }, // transpile css files
+      }, // transpile css files       
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
-        use: ['file-loader'],
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          }
+        ],
       }, // transpile image files
     ],
   },
