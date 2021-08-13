@@ -2,15 +2,14 @@ import React from 'react';
 
 import { Repo } from './pages';
 import { Header } from './layout';
-
-import './App.css';
+import "./style.css";
 
 function App(){
 
   return(
     <>
-      <Header />
-        <Repo/>
+    <Header />
+    <Repo/>
     </>
   );
 

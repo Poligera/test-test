@@ -33,6 +33,7 @@ const Repo = () => {
             }
         } catch (err) {
             console.warn(err);
+            setError("Sorry, this user does not exist");
         }
     }
 
@@ -43,7 +44,7 @@ const Repo = () => {
     }, [username]);
 
 
-    const renderCards = data => data.map((repoEntry, i) => <RepoCard repoName={repoEntry.repoName} key={i} link={repoEntry.url} language={repoEntry.language} forks={repoEntry.forks} openIssues={repoEntry.openIssues} watchers={repoEntry.watchers}/>);
+    const renderCards = data => data.map((repoEntry, i) => <RepoCard repoName={repoEntry.repoName} key={i} link={repoEntry.url} forks={repoEntry.forks} openIssues={repoEntry.openIssues} watchers={repoEntry.watchers}/>);
 
     return (
         <>

@@ -3,3 +3,9 @@ h1 {
 text-align: center;
 text-decoration: underline;
 }
+
+img {
+    display: block;
+    height: 20vh;
+    margin: auto;
+}
